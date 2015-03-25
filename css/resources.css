@@ -1,0 +1,559 @@
+/* RESOURCES CSS */
+
+/* GENERAL STUFF */
+body {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+/* RGB BORDERS */
+#mainlogo,
+#nav0,
+#nav4  {
+	border-top: 1px solid red;
+	border-right: 1px solid green;
+	border-bottom: 1px solid blue;
+	border-left: 1px solid green;
+}
+
+/* HEADER */
+header {
+	color: white;
+	text-decoration: none;
+	background: black;
+}
+
+#headerdiv {
+	margin: 2px auto;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background-color: ivory;
+}
+
+#mainlogo {
+	width: 75%;
+	max-width: 150px;
+	margin: 25px auto 30px;
+	padding: 8.5px 15px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px black inset, -3px -3px 5px black inset;
+}
+
+/* BANNER DIV */
+#bannerdiv,
+#bannerdiv2,
+#bannerdiv3,
+#bannerdiv4 {
+	width: 95%;
+	max-width: 600px;
+	margin: 60px auto 0px;
+}
+
+#bannerdiv h2,
+#bannerdiv2 h2,
+#bannerdiv3 h2,
+#bannerdiv4 h2 {
+	display: block;
+	color: white;
+	width: 100%;
+	max-width: 600px;
+	margin: 50px auto auto;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background: black;
+	box-shadow: 0px 25px 5px rgba(40, 53, 77, 0.8);
+}
+
+#bannerdiv,
+#bannerdiv h2 {
+	margin-top: 0px;
+}
+
+.triangle-l,
+.triangle-r {
+	height:0px;
+	width:0px;
+	border-style:solid;
+	border-width:15px;
+	position: relative;
+}
+
+.triangle-l {
+	border-color: transparent #191919 transparent transparent;
+	transform: rotate(135deg);
+	left: 6px;
+	top: -15px;
+}
+
+.triangle-r {
+	float: right;
+	border-color: transparent transparent transparent #191919;
+	transform: rotate(-135deg);
+	right: 6px;
+	top: -45px;
+}
+
+.bigtriangle-l,
+.bigtriangle-r {
+	display: none;
+}
+
+/* MAIN CONTENT */
+#maindiv {
+	margin: 2px auto;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background-color: ivory;
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
+
+#title {
+	text-align: center;
+	color: white;
+	width: 90%;
+	max-width: 650px;
+	margin: 25px auto;
+	padding: 5px 7.5px 5px;
+	background: black;
+	border-radius: 5px;
+	box-shadow: 1px 5px 5px grey, -1px 10px 5px grey;
+}
+
+p {
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#subtitle,
+#suggestion {
+	max-width: 600px;
+	margin: 25px auto;
+}
+
+#listdiv {
+	width: 90%;
+	max-width: 600px;
+	height: auto;
+	margin: auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border: 3px solid black;
+	border-radius: 5px;
+	background: white;
+}
+
+.relativelistdiv {
+	position: relative;
+	width: 95%;
+	max-width: 700px;
+	margin: 0px auto 25px;
+}
+
+#olpl1,
+#olpr1,
+#olpl2,
+#olpr2 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: rgba(0, 0, 35, 1);
+	text-indent: 0px !important;
+	line-height: 20px;
+	width: 97.5% !important;
+	margin: -15px auto 10px !important;
+	padding: 2.5px 5px 7.5px;
+	border-radius: 2.5px;
+	border: 1px solid black;
+	background: cornsilk;
+}
+
+#www,
+#goodreading,
+#research,
+#practice {
+	height: 575px;
+}
+
+#research {
+	height: 750px;
+}
+
+#oldiv1,
+#oldiv2,
+#oldiv3,
+#oldiv4 {
+	height: 450px;
+	padding: 5px;
+	color: white;
+	width: 97.5%;
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgba(0, 0, 35, 1);
+	box-shadow: 2px 10px 5px rgba(40, 53, 77, 0.8), -2px 10px 5px rgba(40, 53, 77, 0.8);
+}
+
+.listinnerdiv {
+	position: relative;
+	display: block;
+	height: 97.5%;
+	width: 97.5%;
+	overflow: scroll;
+	margin: 5px auto;
+	padding: 15px auto 0px;
+	background: rgba(0, 0, 35, 1);
+}
+
+ol {
+	padding-left: 20px;
+}
+
+.note {
+	font-size: .9em;
+	line-height: 17.5px !important;
+	margin-bottom: 25px !important;
+}
+
+#oldiv3 ol {
+	margin-bottom: 50px;
+}
+
+#research-p1,
+#research-p2,
+#research-p3,
+#research-p4 {
+	margin-top: 0px !important;
+	margin-bottom: 10px !important;
+}
+
+h6 {
+	text-align: left;
+	text-indent: 15px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.booktitle {
+	font-style: italic;
+}
+
+#maindiv li {
+	text-align: left;
+	line-height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ol span {
+	color: white !important;
+	font-size: .75em;
+}
+
+#title2 {
+	clear: both;
+}
+
+p {
+	clear: both;
+}
+
+#learn {
+	text-align: center !important;
+	font-size: 1.1em;
+}
+
+#backtotop {
+	display: block;
+	max-width: 150px;
+	font-size: 1.25em;
+	margin: 25px auto 5px;
+	padding: 2.5px 5px 5px; 
+	background: black;
+	border-radius: 5px;
+	box-shadow: .5px .5px 1px black inset, -.5px -.5px 1px black inset, .5px .5px 1px black, -.5px .5px 1px black, .5px -.5px 1px black, -.5px -.5px 1px black, 2px 10px 5px rgba(0, 0, 0, 0.7), -2px 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* DECORATIVE BORDER */
+#borderdiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	width: 50px;
+	height: 40px;
+	margin: 5px auto;
+}
+
+/* NAV */
+#borderDiv3 {
+	border-top: 5px solid black;
+	margin: 2px auto 0px;	
+}
+
+#nav0,
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 875px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px grey, -1px 10px 5px grey;
+	border-radius: 5px;
+}
+
+#nav0 a,
+#nav4 a {
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+	background:rgba(0,0,0,0.60);
+	border-radius: 2.5px;
+}
+
+#nav0 a,
+#nav4 a {
+	font-size: 1.25em;
+}
+
+/* FOOTER */
+#social-icons {
+	margin: auto;
+	padding-bottom: 25px;
+	border-bottom: 5px solid black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#behance {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	font-size: .7em;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+footer {
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+hr {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* SELECTED */
+#selected1,
+#selected2 {
+	color: dodgerblue !important;
+	font-size: 1.5em  !important;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 250px) {	
+	li {
+		font-size: .8em;
+	}
+	
+	#mainnavdiv a {
+		font-size: .9em;
+	}
+}
+
+@media screen and (max-width: 400px) {	
+	li {
+		font-size: .9em;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	p {
+		text-align: justified;
+		text-indent: 35px;
+		line-height: 27.5px;
+	}
+	
+	#closer,
+	#subtitle,
+	#suggestion {
+		text-align: justified !important;
+		max-width: 600px;
+		margin: 25px auto;
+	}
+
+	#research {
+		height: 700px;
+	}
+
+	#linkedin,
+	#github,
+	#treehouse,
+	#behance  {
+		font-size: .9em;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media screen and (min-width: 690px) {
+	.relativelistdiv {
+		width: 100%;
+	}
+
+	ol {
+		padding-top: 10px;
+		padding-left: 30px;
+	}
+	
+	.listinnerdiv {
+		margin: 0px auto;
+	}
+	
+	#olpl1,
+	#olpl2,
+	#olpr1,
+	#olpr2	{
+		position: absolute;
+		top: 25px;
+		padding-top: 7.5px;
+		padding-bottom: 10px;
+		border: none;
+		border-top: 1px solid dodgerblue;
+		border-right: 1px solid dodgerblue;
+		border-bottom: 2px solid dodgerblue;
+		border-left: 2px solid dodgerblue;
+		z-index: 999;
+	}
+	
+	#olpl1,
+	#olpl2 {
+		left: -45px;
+		border-radius: 0px 15px 15px 0px;
+		box-shadow: 0px 5px 5px rgba(40, 53, 77, 0.8); 
+	}
+	
+	#olpr1,
+	#olpr2 {
+		right: -45px;
+		border-right: 2px solid dodgerblue;
+		border-left: 1px solid dodgerblue;
+		border-radius: 15px 0px 0px 15px;
+		box-shadow: 0px 5px 5px rgba(40, 53, 77, 0.8); 
+	}
+	
+	#www,
+	#goodreading,
+	#research,
+	#practice {
+		height: 525px;
+	}
+
+	#research {
+		height: 635px;
+	}
+	
+	#oldiv1,
+	#oldiv2,
+	#oldiv3,
+	#oldiv4  {
+		position: absolute;
+		top: 30px;
+		border-left: 1px solid dodgerblue;
+		border-right: 1px solid dodgerblue;
+	}
+	
+	#oldiv3 {
+		top: 150px;
+	}
+	
+	#oldiv1,
+	#oldiv3	{
+		left: -35px;
+		border-radius: 0px 20px 20px 0px;
+		box-shadow: 31px 35px 5px rgba(40, 53, 77, 0.8);
+	}
+
+	#oldiv2,
+	#oldiv4 	{
+		left: 40px;
+		border-radius: 20px 0px 0px 20px;
+		box-shadow: -31px 35px 5px rgba(40, 53, 77, 0.8);
+	}
+	
+	h6 {
+	text-indent: 47.5px;
+	}
+
+	.bigtriangle-l,
+	.bigtriangle-r {
+		display: block;
+		height:0px;
+		width:0px;
+		border-style:solid;
+		border-width:25px;
+		position: relative;
+		
+	}
+	
+	.bigtriangle-l {
+		border-color: transparent  rgba(0, 0, 5, 1) transparent transparent;
+		transform: rotate(135deg);
+		left: -25px;
+		top: 465px;
+	}
+
+	.bigtriangle-r {
+		float: right;
+		border-color: transparent transparent transparent rgba(0, 0, 5, 1);
+		transform: rotate(-135deg);
+		right: -70px;
+		top: 465px;
+	}
+	
+	#bigtriangle-l {
+		top: 585px;
+	}
+}

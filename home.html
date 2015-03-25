@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Way Unraveled | Home Page</title>
+		<meta name="description" content="Code practice and experimentation with a focus on compassion, inspiration, and the betterment of our future, our world, and all species that don't eat or otherwise threaten humankind.">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/home.css">
+	</head>
+	<body>
+		<div id="topTrim"></div>
+		<header></header>
+		<div id="headerDiv">
+			<a href="index.html"><img src="img/yinyangapart2.jpg" alt="Main Logo" id="mainLogo"></a>
+			<div id="bannerDiv">
+				<div id="homeTitle">
+					<h2>Home Page</h2>
+				</div>
+				<div class="triangle-l"></div>
+				<div class="triangle-r"></div>
+			</div>
+			<p>Every one of these <a href="index.html"><span id="imgLink"></span></a> links back to the welcome page.</p>
+		</div>
+		<div id="borderDiv1"></div>			
+		<div id="mainDiv" onmouseover="openCurtain();" onclick="openCurtain();">
+			<div id="borderDivLeft"></div>
+			<div id="borderDivRight"></div>
+			<div id="nav0">	
+				<a href="home.html" id="selected1">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="resources.html">Resources</a>
+				<a href="decider.html">Decid-o-matic 5000</a>
+			</div>
+			<!-- <hr> -->
+			<!-- <div id="bannerDiv2">
+				<h2>Now we can begin</h2>
+				<div class="triangle-l"></div>
+				<div class="triangle-r"></div>
+			</div> -->
+			<div class="contentdiv" onmouseover="hideDoor1(); showText1();" onclick="hideDoor1(); showText1();">
+				<div class="content">
+					<div id="hide1"></div>
+					<div id="reveal1">
+						<br><br><br>
+						<div id="backgroundImageDiv">
+							<h3>BACKGROUND IMAGE</h3>
+							<button type="button" onclick="none()" id="button1">None</button>
+							<button type="button" onclick="elegant()" id="button2">Elegant</button>
+							<button type="button" onclick="classic()" id="button3">Classic</button>
+							<button type="button" onclick="themoon()" id="button4">Moon</button>
+							<button type="button" onclick="thesun()" id="button5">Sun</button>
+							<button type="button" onclick="earth()" id="button6">Earth</button>
+							<button type="button" onclick="rain()" id="button7">Rain</button>
+							<button type="button" onclick="stream()" id="button8">Stream</button>
+							<button type="button" onclick="thebeach()" id="button9">Beach</button>
+						</div>
+						<br><br><br><br>
+						<div id="backgroundAmbianceDiv">
+							<h3>AMBIANCE</h3>
+							<div class="audio">
+								<h4>Rain</h4>
+								<audio id="rain" preload="metadata" loop controls>
+									<source src="audio/rain.mp3" type="audio/mpeg">Your browser does not support the audio format.
+								</audio>
+							</div>
+							<div class="audio">
+								<h4>Stream</h4>
+								<audio id="creek" preload="metadata" loop controls>
+									<source src="audio/creek.mp3" type="audio/mpeg">Your browser does not support the audio format.
+								</audio>
+							</div>
+							<div class="audio">
+								<h4>Beach</h4>
+								<audio id="ocean" preload="metadata" loop controls>
+									<source src="audio/ocean.mp3" type="audio/mpeg">Your browser does not support the audio format.
+								</audio>
+							</div>
+						</div>
+						<div class="overText overText1">
+							<p>A background image has been randomly selected for you, but feel free to choose your own. I whipped them up in Adobe Illustrator.</p>
+							<br>
+							<p>The audio files in the Ambiance section came from <a href="http://www.naturesoundsfor.me" target="_blank">naturesoundsfor.me</a></p>
+							<br>
+							<p>Following are the projects and pages I've been working on.  Take a minute and check them out.  I'm sure there's a thing or two here that could be found interesting by even the most sceptical of cynics.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contentdiv contentdivthree" onmouseover="hideDoor3(); showText3();" onclick="hideDoor3(); showText3();">
+				<div class="content">
+					<div id="hide3"></div>
+					<div id="reveal3">
+						<div id="samplePageDiv">
+							<a href="about.html" id="aboutPic">About</a>
+							<a href="contact.html" id="contactPic">Contact</a>
+							<a href="resources.html" id="resourcesPic">Resources</a>
+						</div>
+						<div class="overText overText2">
+							<p>In the about page, you'll find an explanation and description of this site, its purpose, and its creator.</p><br>	
+							<p>Contact information on the contact page.</p><br>
+							<p>And the resource page is a styled multi-dimensional list of valuable resources that could be of great benefit to a great many.</p><br>
+							<p>That one's definitely worth a peek.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contentdiv contentdivtwo" onmouseover="hideDoor2(); showText2();" onclick="hideDoor2(); showText2();">
+				<div class="content">
+					<div id="hide2"></div>
+					<div id="reveal2">
+						<div id="deciderDiv">
+							<a href="decider.html" id="deciderPic">The Decid-o-matic 5000</a>
+						</div>
+						<div class="overText overText3">
+							<p>Ever have a difficult decision to make?  Ever Wonder if you were doing the right thing?  Well, wonder no longer.  The Decid-o-matic 5000 can take the pressure off and make that decision for you.</p>
+							<br>
+							<p>In truth, this is the second iteration of this device, and it works well, but I'm currently working on version number three which will be programmatically more robust and extensive.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contentdiv" onmouseover="hideDoor4(); showText4();" onclick="hideDoor4(); showText4();">
+				<div class="content">
+					<div id="hide4"></div>
+					<div id="reveal4">
+						<img src="img/impossible-triangles.png" alt="Impossible Trinagles" id="impossibleTriangles">
+						<br><br><br><br><br><br>
+						<div class="overText closingText">
+							<p class="centeredtext">What does all of this have in common&quest;</p>
+						</div>
+						<div class="overText closingText">
+							<p>Yes, it's all just practice, but it's also an attempt to help make things better with an offering of kindness, inspiration, and insight.</p>
+						</div>
+						<div class="overText closingText">
+							<p class="centeredtext">Enjoy.</p>
+							<p class="centeredtext"><a href="about.html#yinyanfcontent">&#9775;</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="home.html" id="backToTop">Back to top</a>
+		</div>
+		<div id="borderDiv2">
+			<a href="index.html"><img src="img/yinyangapart3.jpg" alt="logo" id="littleLogo"></a>
+		</div>
+		<div id="navoverdiv">
+			<div id="nav4">	
+				<a href="home.html" id="selected2">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="resources.html">Resources</a>
+				<a href="decider.html">Decid-o-matic 5000</a>
+			</div>
+			<div id="social-icons">
+				<a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a>
+				<a href="https://github.com/gitrobertpm" target="_blank" id="github"> github</a>
+				<a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a>
+				<a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a>
+			</div>
+		</div>
+		<footer>
+			&copy; Robert PM 2015 &copy;<br>
+			Web design, development, art, &amp; written content created by Robert PM<br>Original Art designed in <a href="http://adobe/illustrator.com" target="_blank">Adobe Illustrator</a><br>
+			Code written in <a href="http://notepad-plus-plus.org" target="_blank">Notepad ++</a><br>
+			Code trouble&dash;shooting owes a thanks to the greater WWW community, most notably,<br>
+			<a href="http://teamtreehouse.com" target="_blank">Treehouse</a> | <a href="http://css-tricks.com" target="_blank">CSS TRICKS</a> | <a href="https://developer.mozilla.org" target="_blank">Mozilla Developer Network&lpar;MDN&rpar;</a> | <a href="http://www.w3schools.com/" target="_blank">w3schools</a> | <a href="http://stackoverflow.com" target="_blank">Stack Overflow</a> | <a href="https://www.google.com/?gws_rd=ssl" target="_blank">Google</a><br>  
+			Audio files from <a href="http://naturesoundsfor.me" target="_blank">naturesoundsfor.me</a> via <a href="http://freesound.org" target="_blank">freesound.org</a><br>
+			Usage rights and attribution may be found <a href="about.html#attribution">here</a>.<br>
+			&#9775;Awesomeness provided by Robert PM&#9775;<br><br>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" id="cc" /></a><a href="index.html">thewayunraveled.com</a> and all of its original art and written content created by Robert PM is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br/>Permissions beyond the scope of this license may be available <a href="about.html#attribution" rel="cc:morePermissions">here</a>.<br>
+			<hr>
+		</footer>
+		<script type="text/javascript" src="js/home.js"></script>
+	</body>
+</html>			

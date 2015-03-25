@@ -1,0 +1,521 @@
+/* DECIDER CSS */
+
+body {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	background: deepskyblue;
+}
+
+/* DECIDOMATIC OUTER SHELL */
+#deviceWrapper {
+	position: relative;
+	text-align: center;
+	background: ivory;
+	width: 90%;
+	max-width: 1000px;
+	margin: 25px auto 50px;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-bottom: 25px;
+	padding-left: 5px;
+	border-radius: 55px 55px 0 0;
+	box-shadow: 5px 0 5px rgba(0,0,0,.5) inset, -5px 0 5px rgba(0,0,0,.5) inset, 10px 5px 10px rgba(0,0,0,.5), -10px 5px 10px rgba(0,0,0,.5);
+}
+
+#titleDiv {
+	text-align: center;
+	width: 90%;
+	max-width: 850px;
+	margin: 0px auto 15px;
+	padding: 5px;
+	background: linear-gradient(75deg, red, white, red, red, red, white, red);
+	border-bottom: 1px solid white;
+	border-radius: 45px 45px 0 0;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset, -2px 2px 3px rgba(0,0,0,.5) inset;
+}
+
+#title {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.25em;
+	color: white;
+	text-shadow: 2px 2px 1px black;
+}
+
+/* DEVICOMATIC CONSOLE */
+#device {
+	text-align: center;
+	width: 90%;
+	max-width: 850px;
+	margin: 5px auto 15px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: linear-gradient(75deg, red, white, red, red, red, white, red, red, white);
+	border-bottom: 1px solid white;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset, -2px 2px 3px rgba(0,0,0,.5) inset;
+}
+
+button  {
+	font-size: 1em;
+	color: black;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 15px;
+	box-shadow: 2px 0px 3px rgba(0,0,0,.3), 2px 2px 3px rgba(0,0,0,.3), -2px 0px 3px rgba(0,0,0,.3), -2px 2px 3px rgba(0,0,0,.3);
+}
+
+button:enabled {
+	font-weight: bold;
+	background: ivory;
+	background: radial-gradient(circle, white, dodgerblue, deepskyblue);
+	box-shadow: 1px 1px 5px rgba(0, 0, 255, 0.3), 1px -1px 5px rgba(0, 0, 255, 0.3), -1px 1px 5px rgba(0, 0, 255, 0.3), -1px -1px 5px rgba(0, 0, 255, 0.3);
+}
+
+button:disabled {
+	background: rgba(0,0,0,0.5);
+}
+
+/* COMMENT SECTION */
+#comment {
+	width: 90%;
+	overflow: auto;
+	height: 125px;
+	line-height: 20px;
+	font-size: .9em;
+	margin: 20px auto;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	background: ivory;
+	border-bottom: 1px solid white;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset, -2px 2px 3px rgba(0,0,0,.5) inset;
+}
+
+#instructionList {
+	list-style: none;
+	padding-left: 0px;
+}
+
+#instructionList li {
+	margin: 10px auto;
+}
+
+#goodLuck {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1em;
+}
+
+/* QUESTION SECTION */
+#questionBorderDiv {
+	width: 90%;
+	background: linear-gradient(grey, lightgrey, lightgrey, white, lightgrey, lightgrey, grey);
+	margin: 25px auto;
+	padding: 2px;
+	border: 2px solid black;
+	box-shadow: 2px 0px 3px rgba(0,0,0,.3), 2px 2px 3px rgba(0,0,0,.3), -2px 0px 3px rgba(0,0,0,.3), -2px 2px 3px rgba(0,0,0,.3);
+}
+
+#question {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	font-size: .9em;
+	letter-spacing: 1px;
+	height: 150px;
+	width: 95%;
+	color: deepskyblue;
+	margin: 2px auto;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 7.5px;
+	padding-left: 7.5px;
+	background: black;
+	text-shadow: 1px 1px 2px dodgerblue;
+}
+
+#question p {
+	margin: 0;
+	text-align: left;
+}
+
+#question button {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#nightRider {
+	position: absolute;
+	top: -1px;
+	min-height: 100%;
+	width: 50px;
+	margin: 0 auto;
+	background: linear-gradient(to right, transparent, transparent, transparent, deepskyblue, transparent, transparent, transparent);
+	-webkit-animation: nightRider 2s linear infinite alternate;
+	animation: nightRider 2s linear infinite alternate;
+}
+
+@-webkit-keyrames nightRider {
+	from {left: -15px;}
+	to {left: 85%;}
+}
+
+@keyframes nightRider {
+	from {left: -15px;}
+	to {left: 85%;}
+}
+
+/* MEASURING DEVICE */
+#scale {
+	position: relative;
+	color: dodgerblue;
+	height: 20px;
+	width: 90%;
+	overflow: hidden;
+	max-width: 850px;
+	margin: 0 auto 10px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	background: black;
+	border: 2px solid darkgrey;
+	box-shadow: 2px 0px 3px rgba(0,0,0,.3), 2px 2px 3px rgba(0,0,0,.3), -2px 0px 3px rgba(0,0,0,.3), -2px 2px 3px rgba(0,0,0,.3);
+}
+
+#redLine {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	width: 50px;
+	margin-left: -25px;
+	background: linear-gradient(to right, transparent, transparent, transparent, transparent, rgba(255,0,0,0.5), red, rgba(255,0,0,0.5), transparent, transparent, transparent, transparent);
+}
+
+#scale p {
+	margin: 0;
+}
+
+/* STYLING FOR WORDS AT THE ENDS OF THE MEASURING DEVICE */
+#buttonDiv {
+	position: relative;
+}
+
+#doIt,
+#dontDoIt {
+	position: absolute;
+	text-align: center;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#doIt {
+	top: -65px;
+	left: 0px;
+}
+
+#dontDoIt {
+	top: -65px;
+	right: 0px;
+}
+
+#doIt p,
+#dontDoIt p {
+	font-size: .9em;
+	margin: 0;
+}
+
+#disclaimer {
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	background: ivory;
+	border-bottom: 1px solid white;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.5) inset, 2px 2px 3px rgba(0,0,0,.5) inset;
+}
+
+#yinYang {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+#borderDiv1{
+	content: "";
+	height: 5px;
+	background: black;
+	margin-bottom: 2px;
+}
+
+#borderDiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	display: block;
+	/* text-align: center; */
+	width: 50px;
+	height: 40px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+#navoverdiv {
+	text-align: center;
+	margin: 2px auto 0px;
+	border-top: 5px solid black;
+	background: white;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 875px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px rgba(0,0,0,0.6), -1px 10px 5px rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+
+#nav4 a {
+	font-size: 1.25em;
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+}
+
+#nav4 a:nth-of-type(5) {
+	/* font-size: 1.25em; */
+	white-space: nowrap;
+}
+
+#social-icons {
+	margin: auto;
+	padding-bottom: 25px;
+	border-bottom: 5px solid black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#behance {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	font-size: .7em;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+hr {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* SELECTED */
+#selected1,
+#selected2 {
+	color: dodgerblue !important;
+	font-size: 1.5em  !important;
+}
+
+/* MEDIA QUERRIES */
+@media screen and (min-width: 375px) {
+	#device {
+		background: linear-gradient(75deg, red, white, red, red, red, white, red, red, red, red, white);
+	}
+	
+	#doIt {
+		left: 10px;
+	}
+
+	#dontDoIt {
+		right: 10px;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	#titleDiv {
+		background: linear-gradient(65deg, red, white, red, red, red, white, red);
+	}
+	
+	#device {
+		background: linear-gradient(65deg, red, white, red, red, red, white, red, red, red, white);
+	}
+	
+	#question {
+		height: 100px;
+	}
+	
+	#nightRider {
+		-webkit-animation-duration: 3s;
+		animation-duration: 3s;
+	}
+
+	@-webkit-keyframes nightRider {
+		from {left: -15px;}
+		to {left: 90%;}
+	}
+	
+	@keyframes nightRider {
+		from {left: -15px;}
+		to {left: 90%;}
+	}
+	
+	#doIt {
+		top: -5px;
+		left: 25px;
+	}
+
+	#dontDoIt {
+		right: 25px;
+		top: -5px;
+	}
+	
+	#doIt p,
+	#dontDoIt p {
+		font-size: 1.25em;
+	}
+	
+	#linkedin,
+	#github,
+	#treehouse,
+	#behance  {
+		font-size: .9em;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	#deviceWrapper {
+		border-radius: 115px 115px 0 0;
+	}
+	
+	#titleDiv {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background: linear-gradient(55deg, red, white, red, red, red, white, red);
+		border-radius: 100px 100px 0 0;
+	}
+	
+	#title {
+		font-size: 3em;
+		margin: 25px auto;
+	}
+	
+	#titleDiv p {
+		font-size: 1.1em;
+	}
+	
+	#device {
+		background: linear-gradient(55deg, red, white, red, red, red, white, red, red, red, white);
+	}
+
+	#question,
+	#comment {
+		font-size: 1.25em;
+	}
+	
+	#instructionList li {
+		line-height: 25px;
+	}
+	
+	#nightRider {
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+	}
+
+	@-webkit-keyframes nightRider 
+		from {left: -15px;}
+		to {left: 95%;}
+	}
+	
+	@keyframes nightRider {
+		from {left: -15px;}
+		to {left: 95%;}
+	}
+	
+	#doIt {
+		left: 5%;
+	}
+
+	#dontDoIt {
+		right: 5%;
+	}
+	
+	#doIt p,
+	#dontDoIt p {
+		font-size: 1.5em;
+	}
+	
+	#question {
+		min-height: 100px;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	#titleDiv {
+		background: linear-gradient(45deg, red, white, red, red, red, white, red);
+	}
+
+	#device {
+		background: linear-gradient(45deg, red, white, red, red, red, white, red, red, white);
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#titleDiv {
+		background: linear-gradient(45deg, red, white, red, red, red, white, red);
+	}
+
+	#device {
+		background: linear-gradient(45deg, red, white, red, red, red, red, red, white, red, red, red, red, white);
+	}
+}

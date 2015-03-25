@@ -1,0 +1,274 @@
+/* CONTACT CSS */
+
+/* GENERAL STUFF */
+body {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+/* RGB BORDERS */
+#mainlogo,
+#social-icons,
+#nav4  {
+	border-top: 1px solid red;
+	border-right: 1px solid green;
+	border-bottom: 1px solid blue;
+	border-left: 1px solid green;
+}
+
+/* HEADER */
+header {
+	color: white;
+	text-decoration: none;
+	background: black;
+}
+
+#mainlogo {
+	width: 75%;
+	max-width: 150px;
+	margin: 25px auto 30px;
+	padding: 8.5px 15px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px black inset, -3px -3px 5px black inset;
+}
+
+/* BANNER DIV */
+#bannerdiv {
+	width: 95%;
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+#bannerdiv h2 {
+	display: block;
+	color: white;
+	width: 100%;
+	max-width: 600px;
+	margin: 50px auto auto;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background: black;
+	box-shadow: 0px 25px 5px rgba(0, 0, 0, 0.7);
+}
+
+.triangle-l,
+.triangle-r {
+	height:0px;
+	width:0px;
+	border-style:solid;
+	border-width:15px;
+	position: relative;
+}
+
+.triangle-l {
+	border-color: transparent #191919 transparent transparent;
+	transform: rotate(135deg);
+	left: 6px;
+	top: -15px;
+}
+
+.triangle-r {
+	float: right;
+	border-color: transparent transparent transparent #191919;
+	transform: rotate(-135deg);
+	right: 6px;
+	top: -45px;
+}
+
+/* MAIN DIV */
+#maindiv {
+	position: relative;
+	margin: 2px auto;
+	background: ivory;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	padding-bottom: 35px;
+}
+
+#social-icons {
+	clear: both;
+	width: 90%;
+	max-width: 750px;
+	margin: auto;
+	padding-top: 20px;
+	/* padding-left: 10px; */
+	padding-bottom: 25px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px black inset, -2px -2px 3px black inset,  1px 1px 1px black, -1px -1px 1px black,  -1px 1px 1px black, 1px -1px 1px black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#behance {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	font-size: .7em;
+	margin: 5px;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+.content {
+	border: 3px solid black;
+	border-radius: 5px;
+	width: 80%;
+	max-width: 600px;
+	margin: 50px auto 25px;
+	background: white;
+	overflow: auto;
+}
+
+#title {
+	color: white;
+	width: 90%;
+	margin: 25px auto;
+	padding-top: 5px;
+	padding-bottom: 7.5px;
+	background: black;
+	border-radius: 5px;
+}
+
+#email {
+	text-align: center !important;
+	text-indent: 0 !important;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#email {
+	margin-top: -25px !important;
+	line-height: 20px !important;
+}
+
+#maindiv p {
+	display: block;
+	width: 90%;
+	max-width: 600px;
+	margin: auto auto 15px;
+	line-height: 27.5px;
+}
+
+/* DECORATIVE BORDER */
+#borderbottom {
+	height: 5px;
+	width: 100%;
+	background: black;
+}
+
+#borderdiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	width: 50px;
+	height: 40px;
+	margin: 5px auto;
+}
+
+/* NAV */
+#borderdiv3 {
+	border-top: 5px solid black;
+	margin: 2px auto 0px;	
+}
+
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 875px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px grey, -1px 10px 5px grey;
+	border-radius: 5px;
+}
+
+#nav4 a {
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+}
+
+#nav4 a {
+	font-size: 1.25em;
+}
+
+/* FOOTER */
+footer {
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+hr {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* SELECTED */
+#selected2 {
+	color: dodgerblue !important;
+	font-size: 1.5em  !important;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 500px) {
+	#linkedin,
+	#github,
+	#treehouse,
+	#behance{
+		width: 100px;
+		height: 100px;
+		font-size: .8em;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	#linkedin,
+	#github,
+	#treehouse,
+	#behance {
+		width: 150px;
+		height: 150px;
+		font-size: 1em;
+	}
+}

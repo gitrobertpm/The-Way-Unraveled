@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>The Great Decider</title>
+		<meta name="description" content="answers">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/decider.css">
+	</head>
+	<body>
+		<div id="deviceWrapper">
+			<div id="titleDiv">
+				<h1 id="title">The Decid-o-matic 5000</h1>
+				<p>Helping people with their toughest decisions since 1974</p>
+			</div>
+			<div id="device">
+				<!-- BEGIN BUTTON -->
+				<button type="button" id="beginButton" onclick="begin()">Initialize</button>
+				<!-- COMMENT -->
+				<div id="comment"></div>
+				<div id="questionBorderDiv">
+					<div id="question">
+						<div id="nightRider"></div>
+					</div>
+				</div>
+				<!-- SCALE -->
+				<div id="scale">
+					<div id="redLine"></div>
+					<p> | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - | - - - - - |</p>
+				</div>
+				<div id="buttonDiv">
+					<!-- DO IT DIV -->
+					<div id="doIt">
+						<p>Do</p>
+					</div>
+					<!-- CONTINUE, POSITIVE, NEGATIVE, AND NEITHER BUTTONS -->
+					<button type="button" id="affirmativeButton" onclick="affirmative()">Positive</button>
+					<button type="button" id="negativeButton" onclick="negative()">Negative</button>
+					<button type="button" id="neitherButton" onclick="neither()">Neither</button>
+					<br>
+					<button type="button" id="continueButton" onclick="continueBtn()">Continue</button>
+					<!-- DON'T DO IT DIV -->
+					<div id="dontDoIt">
+						<p>Don't</p>
+					</div>
+				</div>
+				<!-- QUESTION -->
+				<div id="disclaimer">
+					<p>*This machine's responses can only be as reliable as your answers are true.</p>
+					<p>**Responses may not apply in life-or-death situations.</p>
+				</div>
+			</div>
+			<p id="yinYang"><a href="about.html#yinyangcontent">&#9775;</a></p>
+		</div>
+		
+		<!-- BORDERS -->
+		<div id="borderDiv1"></div>
+		<div id="borderDiv2">
+			<a href="index.html"><img src="img/yinyangapart3.jpg" alt="logo" id="littleLogo"></a>
+		</div>
+		
+		<!-- NAV -->
+		<div id="navoverdiv">
+			<div id="nav4">	
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<a href="resources.html">Resources</a>
+				<a href="decider.html" id="selected1">Decid-o-matic 5000</a>
+			</div>
+			<div id="social-icons">
+				<a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a>
+				<a href="https://github.com/gitrobertpm" target="_blank" id="github"> github</a>
+				<a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a>
+				<a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<footer>
+			&copy; Robert PM 2015 &copy;<br>
+			Web design, development, art, &amp; written content created by Robert PM<br>Original Art designed in <a href="http://adobe/illustrator.com" target="_blank">Adobe Illustrator</a><br>
+			Code written in <a href="http://notepad-plus-plus.org" target="_blank">Notepad ++</a><br>
+			Code trouble&dash;shooting owes a thanks to the greater WWW community, most notably,<br>
+			<a href="http://teamtreehouse.com" target="_blank">Treehouse</a> | <a href="http://css-tricks.com" target="_blank">CSS TRICKS</a> | <a href="https://developer.mozilla.org" target="_blank">Mozilla Developer Network&lpar;MDN&rpar;</a> | <a href="http://www.w3schools.com/" target="_blank">w3schools</a> | <a href="http://stackoverflow.com" target="_blank">Stack Overflow</a> | <a href="https://www.google.com/?gws_rd=ssl" target="_blank">Google</a><br>  
+			Audio files from <a href="http://naturesoundsfor.me" target="_blank">naturesoundsfor.me</a> via <a href="http://freesound.org" target="_blank">freesound.org</a><br>
+			Usage rights and attribution may be found <a href="about.html#attribution">here</a>.<br>
+			&#9775;Awesomeness provided by Robert PM&#9775;<br><br>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" id="cc" /></a><a href="index.html">thewayunraveled.com</a> and all of its original art and written content created by Robert PM is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br/>Permissions beyond the scope of this license may be available <a href="about.html#attribution" rel="cc:morePermissions">here</a>.<br>
+			<hr>
+		</footer>
+		<script src ="js/decider.js"></script>
+	</body>
+</html>
