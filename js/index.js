@@ -52,8 +52,8 @@ function redTheme() {
 function greenTheme() {
 	document.getElementById('col_L').innerHTML = greenEyes;
 	document.getElementById('col_R').innerHTML = greenEyes;
-	document.getElementById('col_L').style.background = "linear-gradient(black, darkgreen, green, white, green, darkgreen, black, black, black)";
-	document.getElementById('col_R').style.background = "linear-gradient(black, darkgreen, green, white, green, darkgreen, black, black, black)";
+	document.getElementById('col_L').style.background = "linear-gradient(black, darkgreen, green, white, lightgreen, lightgreen, lightgreen, white)";
+	document.getElementById('col_R').style.background = "linear-gradient(black, darkgreen, green, white, lightgreen, lightgreen, lightgreen, white)";
 	border1.background = "rgba(0,255,0,0.3)";
 	border1.boxShadow = "0px 2px 3px lawngreen inset, 0px -2px 3px lawngreen inset";
 	border3.background = "rgba(0,255,0,0.3)";
@@ -61,13 +61,13 @@ function greenTheme() {
 	border4.background = "rgba(0,255,0,0.3)";
 	border4.boxShadow = "0px 2px 3px lawngreen inset, 0px -2px 3px lawngreen inset";
 	message1.background = "rgba(0, 255, 0, 0.3)";
-	message1.boxShadow = "2px 2px 3px black inset, 0px -2px 3px black inset";
+	message1.boxShadow = "0px 2px 3px black inset, 0px -2px 3px black inset";
 	message2.background = "rgba(0, 185, 0, 0.3)";
-	message2.boxShadow = "2px 2px 3px black inset, 0px -2px 3px black inset";
+	message2.boxShadow = "2px 2px 3px black inset, 2px -2px 3px black inset";
 	message3.background = "rgba(0, 125, 0, 0.3)";
-	message3.boxShadow = "2px 2px 3px black inset, 0px -2px 3px black inset";
+	message3.boxShadow = "0px 2px 3px black inset, 0px -2px 3px black inset";
 	message4.background = "rgba(0, 75, 0, 0.3)";
-	message4.boxShadow = "2px 2px 3px black inset, 0px -2px 3px black inset";
+	message4.boxShadow = "2px 2px 3px black inset, 2px -2px 3px black inset";
 };
 
 function blueTheme() {

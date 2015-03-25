@@ -343,7 +343,7 @@ button:disabled {
 		radial-gradient(rgba(0,0,255,.3) 2px, transparent 20px);
 	background-size: 50px 50px, 60px 60px, 40px 40px; 
 	-webkit-animation: spacescroll 250s linear infinite /* paused */;
-	animation: spacescroll 250s linear infinite /* paused */;
+	animation: spacescroll 250s linear infinite paused;
 }
 
 @-webkit-keyframes spacescroll {
@@ -536,14 +536,14 @@ a:hover, a:focus, a:active {
 		background: linear-gradient(to right, black, blue, deepskyblue, white, deepskyblue, blue, black);
 	}
 	
-/* GREEN LIGHTSABER */
+/* GREEN THEME */
 	.greenEyes {
 		position: absolute;
-		bottom: 0;
+		bottom: 150px;
 		width: 100%;
 		height: 200px;
 		margin: auto;
-		background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 125px);
+		background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, lightgreen 105px);
 	}
 	
 	.greenEyesPupil {
