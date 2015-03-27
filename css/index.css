@@ -322,17 +322,51 @@ button:disabled {
 
 /* LINK, IMAGE, AND TEXT AT BOTTOM OF THE PAGE */
 #outerEnterDiv {
-		background: black;
-		margin-top: -16px;
-		margin-bottom: -16px;
-		padding-top: 15px;
-	}
+	position: relative;
+	background: black;
+	margin-top: -16px;
+	margin-bottom: -16px;
+	padding-top: 15px;
+}
+
+#invite {
+	position: absolute;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style: oblique;
+	font-size: 20px;
+	width: 100%;
+	height: 30px;
+	margin: auto;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	line-height: 22.5px;
+	overflow: hidden;
+	background: rgba(255,255,255,0.9);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	z-index: 999;
+}
+
+#inviteSpan_1 {
+	color: dodgerblue;
+	font-size: 30px;
+	margin-bottom: 25px;
+	text-shadow: 3px 3px 2px lightgrey;
+}
+
+#inviteSpan_2 {
+	display: none;
+}
+
+#invite:active, #invite:focus, #invite:hover {
+	height: auto;
+}
 
 #enterDiv {
 	position: relative;
 	width: 200px;
 	height: 165px;
-	margin: 35px auto 15px;
+	margin: 75px auto 15px;
 	background: white;
 	border: 3px solid black;
 	border-radius: 50% 50% 0 0;
@@ -343,7 +377,7 @@ button:disabled {
 		radial-gradient(rgba(0,0,255,.3) 2px, transparent 20px);
 	background-size: 50px 50px, 60px 60px, 40px 40px; 
 	-webkit-animation: spacescroll 250s linear infinite /* paused */;
-	animation: spacescroll 250s linear infinite paused;
+	animation: spacescroll 250s linear infinite /* paused */;
 }
 
 @-webkit-keyframes spacescroll {
@@ -409,7 +443,6 @@ a:hover, a:focus, a:active {
 	color: blue;
 }
 
-#invite,
 #screenSizeRecomendation,
 #footer {
 	color: white;
@@ -438,10 +471,6 @@ a:hover, a:focus, a:active {
 	
 	#outerEnterDiv {
 		margin-top: -25px;
-	}
-
-	#screenSizeRecomendation {
-		display: none;
 	}
 	
 	#footer {
@@ -543,7 +572,7 @@ a:hover, a:focus, a:active {
 		width: 100%;
 		height: 200px;
 		margin: auto;
-		background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, lightgreen 105px);
+		background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, transparent 125px);
 	}
 	
 	.greenEyesPupil {
@@ -555,6 +584,23 @@ a:hover, a:focus, a:active {
 		margin: auto;
 		background: black;
 		border-radius: 50%;
+	}
+	
+	.smileLeft,
+	.smileRight {
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		bottom: 0%;
+		z-index: 999;
+	}
+	
+	.smileLeft {
+		background: linear-gradient(to top right, white, white, transparent, transparent, transparent);
+	}
+	
+	.smileRight {
+		background: linear-gradient(to top left, white, white, transparent, transparent, transparent);
 	}
 	
 /* RED THEME BLOCKS */
@@ -660,8 +706,15 @@ a:hover, a:focus, a:active {
 		border-bottom: 2px solid black;
 	}
 	
+	#invite {
+		box-shadow: 0px 1px 3px black inset, 0px -1px 3px black inset;
+	}
+	
+	#inviteSpan_2 {
+		display: inline;
+	}
+	
 	#title_3,
-	#invite,
 	#screenSizeRecomendation,
 	#footer {
 		color: black;
@@ -677,5 +730,9 @@ a:hover, a:focus, a:active {
 
 	.dr_R {
 		background: linear-gradient(to right, black, lightgrey, white, rgba(0,0,255,0.3), rgba(0,255,0,0.3), rgba(255,0,0,0.5));
+	}
+	
+	#screenSizeRecomendation {
+		display: none;
 	}
 }

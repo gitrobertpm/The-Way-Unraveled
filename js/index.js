@@ -17,7 +17,8 @@ var affirmative = ['<p>Awesome!</p>', '<p>Well done!</p>', '<p>Way to go!</p>', 
 var coloredBlocks = '<div class="blocks"><div class="red top right"></div><div class="red top left"></div><div class="red bottom right"></div><div class="red bottom left"></div><div class="purple top"></div><div class="purpleSides right"></div><div class="purple bottom"></div><div class="purpleSides left"></div><div class="orange or_right or_first"></div><div class="orange or_left or_second"></div><div class="orange or_right or_third"></div><div class="orange or_left or_fourth"></div><div class="yellow y_left y_first"></div><div class="yellow y_right y_second"></div><div class="yellow y_left y_third"></div><div class="yellow y_right y_fourth"></div></div>';
 
 var blueLightSaber = '<div class="innerColumn"></div>';
-var greenEyes = '<div class="greenEyes"><div class="greenEyesPupil"></div></div>';
+var greenEyesLeft = '<div class="smileLeft"></div><div class="greenEyes"><div class="greenEyesPupil"></div></div>';
+var greenEyesRight = '<div class="smileRight"></div><div class="greenEyes"><div class="greenEyesPupil"></div></div>';
 
 // BRIGHT BORDERS AND MISSION STATEMENT MESAGES
 var border1 = document.getElementById("border_1").style;
@@ -50,8 +51,8 @@ function redTheme() {
 };
 
 function greenTheme() {
-	document.getElementById('col_L').innerHTML = greenEyes;
-	document.getElementById('col_R').innerHTML = greenEyes;
+	document.getElementById('col_L').innerHTML = greenEyesLeft;
+	document.getElementById('col_R').innerHTML = greenEyesRight;
 	document.getElementById('col_L').style.background = "linear-gradient(black, darkgreen, green, white, lightgreen, lightgreen, lightgreen, white)";
 	document.getElementById('col_R').style.background = "linear-gradient(black, darkgreen, green, white, lightgreen, lightgreen, lightgreen, white)";
 	border1.background = "rgba(0,255,0,0.3)";
