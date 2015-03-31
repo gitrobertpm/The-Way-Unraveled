@@ -346,7 +346,8 @@ p {
 #linkedin,
 #github,
 #treehouse,
-#behance {
+#behance,
+#codepen{
 	display: inline-block;
 	width: 65px;
 	height: 65px;
@@ -431,7 +432,8 @@ hr {
 	#linkedin,
 	#github,
 	#treehouse,
-	#behance  {
+	#behance,
+	#codepen	{
 		font-size: .9em;
 		width: 100px;
 		height: 100px;

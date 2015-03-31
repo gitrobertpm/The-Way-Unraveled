@@ -119,4 +119,5 @@ document.getElementById("hide4").style.backgroundImage = door;
 document.getElementById("linkedin").style.backgroundImage= "url('img/social_icons/linkedin.png')";
 document.getElementById("github").style.backgroundImage= "url('img/social_icons/github.png')";
 document.getElementById("treehouse").style.backgroundImage= "url('img/social_icons/treehouse.png')";
+document.getElementById("codepen").style.backgroundImage= "url('img/social_icons/codepen.png')";
 document.getElementById("behance").style.backgroundImage= "url('img/social_icons/behance.png')";

@@ -104,10 +104,9 @@ header {
 #social-icons {
 	clear: both;
 	width: 90%;
-	max-width: 750px;
+	max-width: 1000px;
 	margin: auto;
 	padding-top: 20px;
-	/* padding-left: 10px; */
 	padding-bottom: 25px;
 	background: white;
 	border-radius: 5px;
@@ -117,7 +116,8 @@ header {
 #linkedin,
 #github,
 #treehouse,
-#behance {
+#behance,
+#codepen {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -255,7 +255,8 @@ hr {
 	#linkedin,
 	#github,
 	#treehouse,
-	#behance{
+	#behance,
+	#codepen{
 		width: 100px;
 		height: 100px;
 		font-size: .8em;
@@ -266,7 +267,8 @@ hr {
 	#linkedin,
 	#github,
 	#treehouse,
-	#behance {
+	#behance,
+	#codepen {
 		width: 150px;
 		height: 150px;
 		font-size: 1em;
