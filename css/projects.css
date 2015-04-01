@@ -28,6 +28,10 @@ a:hover, a:focus, a:active {
 	background: white;
 }
 
+#title_0 {
+	margin-top: 0px;
+}
+
 /* HORIZONTAL RULE */
 .hrToDownRight {
 	transform: rotateZ(2.5deg);
@@ -85,9 +89,7 @@ a:hover, a:focus, a:active {
 	z-index: -1;
 }
 
-#title_1,
-#title_2,
-#title_3 {
+h1 {
 	font-weight: 100;
 }
 
@@ -247,6 +249,10 @@ footer {
 @media screen and (min-width: 500px) {
 	#mainLogo {
 		width: 250px;
+	}
+	
+	#title_0 {
+		font-size: 4em;
 	}
 
 	#linkedin,

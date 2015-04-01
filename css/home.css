@@ -107,10 +107,11 @@ header {
 }
 
 #homeTitle h2 {
+	font-weight: 100;
+	font-size: 1em;
 	margin: 0 auto 10px;
 	border: none;
 	box-shadow: none;
-	font-size: 1em;
 }
 
 #headerDiv p {

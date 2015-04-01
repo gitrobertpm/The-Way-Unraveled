@@ -64,9 +64,9 @@ setInterval(function(){ randomBackgroundGradient(); }, 50);
 
 // SET RGB VALUES
 function randomBackgroundGradient() {
-	document.getElementById("enterDiv").style.background = "repeating-radial-gradient(circle, rgba(" + a + "," + b + "," + c + ", 0.9), rgba(" + d + "," + e + "," + f + ", 1), rgba(" + g + "," + h + "," + i + ", 1), rgba(" + j + "," + k + "," + l + ", 1))";
-	document.getElementById("dr_L").style.background = "linear-gradient(to left, rgba(" + a + "," + b + "," + c + ", 0.9), rgba(" + d + "," + e + "," + f + ", 1), rgba(" + g + "," + h + "," + i + ", 1), rgba(" + j + "," + k + "," + l + ", 1))";
-	document.getElementById("dr_R").style.background = "linear-gradient(to right, rgba(" + a + "," + b + "," + c + ", 0.9), rgba(" + d + "," + e + "," + f + ", 1), rgba(" + g + "," + h + "," + i + ", 1), rgba(" + j + "," + k + "," + l + ", 1))";
+	document.getElementById("enterDiv").style.background = "repeating-radial-gradient(circle, rgba(" + a + "," + b + "," + c + ", 1), rgba(" + d + "," + e + "," + f + ", 1), rgba(" + g + "," + h + "," + i + ", 1), rgba(" + j + "," + k + "," + l + ", 1))";
+	document.getElementById("dr_L").style.background = "linear-gradient(to left, rgba(" + a + "," + b + "," + c + ", 1), rgba(" + d + "," + e + "," + f + ", 1), rgba(" + g + "," + h + "," + i + ", 1), rgba(" + j + "," + k + "," + l + ", 1))";
+	document.getElementById("dr_R").style.background = "linear-gradient(to right, rgba(" + a + "," + b + "," + c + ", 1), rgba(" + d + "," + e + "," + f + ", 1), rgba(" + g + "," + h + "," + i + ", 1), rgba(" + j + "," + k + "," + l + ", 1))";
 	
 	// ADD OR SUBTRACT ONE TO EACH R-G-B
 	if (a < 255) {
