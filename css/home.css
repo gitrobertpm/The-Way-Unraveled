@@ -47,10 +47,10 @@ header {
 #mainLogo {
 	width: 150px;
 	margin: 15px auto;
-	padding: 8.5px 15px;
+	padding: 5px 5px 2px;
 	background: white;
 	border-radius: 5px;
-	box-shadow: 1px 0px 4px black inset, -1px -2px 4px black inset;
+	box-shadow: 1px 0px 4px black inset, -1px 0px 4px black inset;
 }
 
 /* RGB BORDERS */
@@ -399,19 +399,20 @@ audio {
 	margin-left: 5px;
 }
 
-#deciderDiv {
+#projectsDiv {
 	width: 190px;
 	margin: auto auto 15px;
 }
 
-#deciderPic {
+#projectsPic {
 	display: inline-block;
+	text-align: center;
 	height: 175px;
 	width: 190px;
 	margin: 0 auto 10px;
 	background: black;
 	background-position: bottom;
-	background-size: 70% 80%;
+	background-size: 100% 85%;
 	background-repeat: no-repeat;
 	border: 1px solid black;
 }
@@ -479,11 +480,6 @@ audio {
 	color: white;
 	margin: 10px;
 	transition-duration: .5s;
-}
-
-#nav0 a:nth-of-type(5),
-#nav4 a:nth-of-type(5) {
-	white-space: nowrap;
 }
 
 #social-icons {
@@ -707,7 +703,7 @@ hr {
 		right: 30%;
 	}
 	
-	#deciderDiv {
+	#projectsDiv {
 		position: absolute;
 		top: 25px;
 		left: 20%;
@@ -770,7 +766,7 @@ hr {
 		left: 20%;
 	}
 	
-	#deciderDiv {
+	#projectsDiv {
 		left: 25%;
 	}
 }
@@ -801,7 +797,7 @@ hr {
 		right: 35%;
 	}
 	
-	#deciderDiv {
+	#projectsDiv {
 		left: 30%;
 	}
 }

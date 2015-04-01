@@ -1,0 +1,607 @@
+/* INDEX CSS */
+
+/* FOR THE MOST PART, THESE STYLINGS ARE LAID OUT IN THE ORDER THEY APPEAR IN THE HTML, TOP TO BOTTOM, AND FOR SMALL SCREENS FIRST */
+
+body {
+	font-family: Century Gothic, sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+/* TURNS TEXT WHITE FOR DARKER BACKGROUNDS */
+.white {
+	color: white;
+}
+
+/* DECORATIVE BORDERS */
+.horizontalBorder {
+	width: 100%;
+	height: 10px;
+}
+
+#welcomeDiv {
+	background: black;
+}
+
+h2 {
+	font-weight: 100;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#title_2 {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+#title_3 {
+	color: white;
+}
+
+/* MAIN SECTION OF THE PAGE */
+#backgroundImgDiv {
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+.message {
+	text-align: center;
+	line-height: 75px;
+	width: 90%;
+	margin: 15px auto;
+	padding: 10px;
+}
+
+.message p {
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 7.5px;
+	padding-left: 10px;
+	background: rgba(255,255,255,0.8);
+}
+
+.left_M  {
+	margin-left: 0;
+	border-radius: 0 10px 10px 0;
+}
+
+.right_M  {
+	margin-right: 0;
+	border-radius: 10px 0 0 10px;
+}
+
+.left_M  p {
+	margin-right: 0 !important;
+	border-radius: 0 5px 5px 0;
+	border-left: 1px solid white;
+	box-shadow: -5px 0px 10px rgba(255,255,255,0.7);
+}
+
+.right_M  p {
+	margin-left: 0 !important;
+	border-radius: 5px 0 0 5px;
+	border-right: 1px solid white;
+	box-shadow: 5px 0px 10px rgba(255,255,255,0.7);
+}
+
+#goback {
+	display: block;
+	color: dodgerblue;
+	max-width: 150px;
+	font-size: 1.25em;
+	margin: 15px auto 5px;
+	padding: 2.5px 5px 5px; 
+	background: black;
+	border-radius: 5px;
+	box-shadow: .5px .5px 1px black inset, -.5px -.5px 1px black inset, .5px .5px 1px black, -.5px .5px 1px black, .5px -.5px 1px black, -.5px -.5px 1px black, 2px 10px 5px rgba(0, 0, 0, 0.7), -2px 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+#cr {
+	color: white;
+	margin: 0;
+	margin-top: 50px;
+	padding-bottom: 15px;
+}
+
+/* NAV */
+#borderDiv1 {
+	height: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background: black;
+}
+
+#borderDiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	width: 50px;
+	height: 40px;
+	margin: 5px auto;
+}
+
+#navoverdiv {
+	border-top: 5px solid black;
+	margin: 2px auto 0px;	
+}
+
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 500px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px rgba(0,0,0,0.6), -1px 10px 5px rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+
+#nav4 a {
+	font-size: 1.25em;
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+}
+
+#social-icons {
+	margin: auto;
+	padding-bottom: 25px;
+	border-bottom: 5px solid black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#codepen,
+#behance {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	font-size: .7em;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+hr {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* SELECTED */
+#selected2 {
+	color: dodgerblue !important;
+	font-size: 1.5em  !important;
+}
+
+/* MEDIA QUERRIES*/
+@media screen and (min-width: 500px) {
+	#linkedin,
+	#github,
+	#treehouse,
+	#codepen,
+	#behance  {
+		font-size: .9em;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 750px) {
+	.horizontalBorder {
+		height: 15px;
+	}
+	
+	.message {
+		width: 80%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	
+	#cr {
+		margin-top: 0px;
+	}
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1200px) {
+	#welcomeDiv {
+		height: 257px;
+	}
+	
+	#backgroundImgDiv {
+		position: relative;
+		background: ivory;
+		z-index: -2;
+	}
+	
+	#title_3 {
+		color: black;
+		font-size: 35px;
+		margin: 0px auto auto;
+		padding-top: 15px;
+	}
+
+	.message {
+		width: 66%;
+	}
+	
+/* DECORATIVE STUFF FOR EITHER SIDE OF THE MISSION STATEMENT */
+	.decoColumn {
+		position: absolute;
+		top: 0px;
+		width: 33%;
+		height: 100%;
+		background: black;
+		z-index: -1;
+	}
+	
+	.col_L {
+		left: 0px;
+	}
+	
+	.col_R {
+		right: 0px;
+	}
+	
+/* BLUE LIGHTSABER */
+	.innerColumn {
+		width: 33%;
+		height: 100%;
+		margin: 0 auto;
+		background: linear-gradient(to right, black, blue, deepskyblue, white, deepskyblue, blue, black);
+	}
+	
+/* GREEN THEME */
+	.greenEyes {
+		position: absolute;
+		bottom: 115px;
+		width: 100%;
+		height: 200px;
+		margin: auto;
+		background: radial-gradient( darkgoldenrod 35px, gold 50px, lawngreen 75px, green 100px, black 101px, transparent 125px);
+	}
+	
+	.greenEyesPupil {
+		position: absolute;
+		top: 75px;
+		left: 49%;
+		width: 10px;
+		height: 50px;
+		margin: auto;
+		background: black;
+		border-radius: 50%;
+	}
+	
+	.smileLeft,
+	.smileRight {
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		bottom: 0%;
+		z-index: 999;
+	}
+	
+	.smileLeft {
+		background: linear-gradient(to top right, white, white, transparent, transparent, transparent);
+	}
+	
+	.smileRight {
+		background: linear-gradient(to top left, white, white, transparent, transparent, transparent);
+	}
+	
+/* RED THEME BLOCKS */
+	.blocks {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	
+	.blocks div {
+		position: absolute;
+		margin:  20px 5px;
+		border-radius: 10px;
+	}
+	
+	.red {
+		width: 20%;
+		height: 20%;
+		background: linear-gradient(to right, red, rgba(255,0,0,0.7), red);
+	}
+	
+	.purple {
+		left: 21%;
+		width: 56%;
+		height: 10%;
+		background: linear-gradient(to right, maroon, rgba(255,0,0,0.3), maroon);
+		
+	}
+	
+	.purpleSides {
+		top: 21%;
+		width: 20%;
+		height: 53.5%;
+		background: linear-gradient(to right, maroon, rgba(255,0,0,0.3), maroon);
+	}
+	
+	.top {
+		top: 0;
+	}
+	
+	.left {
+		left: 0;
+	}
+	
+	.right {
+		right: 0;
+	}
+	
+	.bottom {
+		bottom: 0;
+	}
+	
+	.orange {
+		width: 40%;
+		height: 17.5%;
+		background: linear-gradient(to right, darkorange, rgba(255, 140, 0,0.7), darkorange);
+	}
+	
+	.yellow {
+		width: 14%;
+		height: 17.5%;
+		background: linear-gradient(to right, yellow, rgba(255, 247, 44,0.7), yellow);
+	}
+	
+	.y_left,
+	.or_left {
+		left: 21%;
+	}
+	
+	.y_right,
+	.or_right {
+		right: 21%;
+	}
+	
+	.y_first,
+	.or_first {
+		top: 10.5%;
+	}
+	
+	.y_second,
+	.or_second {
+		top: 29%;
+	}
+	
+	.y_third,
+	.or_third {
+		bottom: 29.5%;
+	}
+	
+	.y_fourth,
+	.or_fourth {
+		bottom: 11%;
+	}
+	
+	#cr {
+		color: black;
+	}
+}
+
+/* RED FLOWER STYLING AND OPENING ANIMATIONS */
+#flowerBox {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 50%;
+	-webkit-animation: petalGlow 5s ease .5s forwards; 
+	animation: petalGlow 5s ease .5s forwards; 
+}
+
+@-webkit-keyframes petalGlow {
+	0% {background: transparent; box-shadow: none; transform: rotateZ(0deg);}
+	80% {background: transparent; box-shadow: none;}
+	90% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white;}
+	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white; transform: rotateZ(360deg);}
+}
+
+@keyframes petalGlow {
+	0% {background: transparent; box-shadow: none; transform: rotateZ(0deg);}
+	80% {background: transparent; box-shadow: none;}
+	90% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white;}
+	100% {background: rgba(255,0,0,0.3); box-shadow: 1px 1px 2px white, 1px -1px 2px white, -1px 1px 2px white, -1px -1px 2px white; transform: rotateZ(360deg);}
+}
+
+.petal {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 50px;
+	border-radius: 35%;
+}
+
+#petal_1  {
+	border-color: rgba(255,0,0,0.5) transparent transparent transparent;
+}
+
+#petal_2  {
+	border-color: rgba(240,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_2 .5s ease .5s forwards; 
+	animation: petal_2 .5s ease .5s forwards; 
+}
+
+@-webkit-keyframes petal_2 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(45deg);}
+}
+
+@keyframes petal_2 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(45deg);}
+}
+
+#petal_3  {
+	border-color: rgba(225,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_3 1s ease .5s forwards;
+	animation: petal_3 1s ease .5s forwards;
+}
+
+@-webkit-keyframes petal_3 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(90deg);}
+}
+
+@keyframes petal_3 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(90deg);}
+}
+
+#petal_4 {
+	border-color: rgba(210,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_4 1.5s ease .5s forwards;
+	animation: petal_4 1.5s ease .5s forwards;
+}
+
+@-webkit-keyframes petal_4 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(135deg);}
+}
+
+@keyframes petal_4 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(135deg);}
+}
+
+#petal_5  {
+	border-color: rgba(195,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_5 2s ease .5s forwards;
+	animation: petal_5 2s ease .5s forwards;
+}
+
+@-webkit-keyframes petal_5 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(180deg);}
+}
+
+@keyframes petal_5 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(180deg);}
+}
+
+#petal_6  {
+	border-color: rgba(180,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_6 2.5s ease .5s forwards;
+	animation: petal_6 2.5s ease .5s forwards;
+}
+
+@-webkit-keyframes petal_6 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(225deg);}
+}
+
+@keyframes petal_6 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(225deg);}
+}
+
+#petal_7  {
+	border-color: rgba(165,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_7 3s ease .5s forwards;
+	animation: petal_7 3s ease .5s forwards;
+}
+
+@-webkit-keyframes petal_7 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(270deg);}
+}
+
+@keyframes petal_7 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(270deg);}
+}
+
+#petal_8  {
+	border-color: rgba(150,0,0,0.5) transparent transparent transparent;
+	-webkit-animation: petal_8 3.5s ease .5s forwards;
+	animation: petal_8 3.5s ease .5s forwards;
+}
+
+@-webkit-keyframes petal_8 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(315deg);}
+}
+
+@keyframes petal_8 {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(315deg);}
+}
+
+#flowerBulb {
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	margin-left: -12.5px;
+	background: white;
+	border-radius: 50%;
+}
+
+#flowerBulb p {
+	font-size: 30px;
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	margin-top: -10px;
+}

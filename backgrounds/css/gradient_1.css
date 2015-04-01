@@ -1,0 +1,262 @@
+/* GRADIENTS_1 JS */
+
+body {
+	position: relative;
+	font-family: Century Gothic, sans-serif;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	font-size: 1em;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 21px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 25px auto;
+	padding: 5px 7.5px 10px;
+}
+
+.g_Divs {
+	width: 90%;
+	max-width: 300px;
+	margin: 25px auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#rgbValueNowDiv {
+	font-size: .8em;
+	height: 225px;
+	margin-top: 25px;
+	padding-top: 15px;
+	overflow: hidden;
+}
+
+#rgbValueNowDiv:active, #rgbValueNowDiv:focus, #rgbValueNowDiv:hover {
+	height: 225px;
+}
+
+#rgbTitle,
+button {
+	color: dodgerblue;
+	font-size: 20px;
+	text-shadow: -1px -1px 0px lightblue;
+	width: 90%;
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 3px groove black;
+}
+
+#rgbValueDiv {
+	height: 50px;
+	overflow: hidden;
+}
+
+#rgbValueDiv:active, #rgbValueDiv:focus, #rgbValueDiv:hover {
+	height: 225px;
+}
+
+#rgbTitle {
+	margin-top: 5px;
+}
+
+#rgbTitle,
+button,
+h1,
+.g_Divs {
+	background: rgba(255,255,255,0.3);
+	box-shadow: 0 2px 2px white inset, 0 -2px 2px white inset;
+}
+
+#rgbTitle:active, #rgbTitle:focus, #rgbTitle:hover ,
+button:active, button:focus, button:hover {
+	color: white;
+	text-shadow: -1px -1px 0px deepskyblue;
+}
+
+/* NAV */
+#borderDiv1 {
+	height: 5px;
+	margin-top: 575px;
+	margin-bottom: 2px;
+	background: black;
+}
+
+#borderDiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	width: 50px;
+	height: 40px;
+	margin: 5px auto;
+}
+
+#navoverdiv {
+	border-top: 5px solid black;
+	margin: 2px auto 0px;	
+}
+
+#goback {
+	display: block;
+	color: dodgerblue;
+	max-width: 150px;
+	font-size: 1.25em;
+	margin: 15px auto 5px;
+	padding: 2.5px 5px 5px; 
+	background: black;
+	border-radius: 5px;
+	box-shadow: .5px .5px 1px black inset, -.5px -.5px 1px black inset, .5px .5px 1px black, -.5px .5px 1px black, .5px -.5px 1px black, -.5px -.5px 1px black, 2px 10px 5px rgba(0, 0, 0, 0.7), -2px 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 500px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px rgba(0,0,0,0.6), -1px 10px 5px rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+
+#nav4 a {
+	font-size: 1.25em;
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+}
+
+#social-icons {
+	margin: auto;
+	padding-bottom: 25px;
+	border-bottom: 5px solid black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#codepen,
+#behance {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	font-size: .7em;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+hr {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* SELECTED */
+#selected2 {
+	color: dodgerblue !important;
+	font-size: 1.5em  !important;
+}
+
+/* MEDIA QUERIES -- SMALL SCREENS */
+@media screen and (min-width: 500px) {
+	#rgbValueNowDiv {
+		height: 45px;
+	}
+
+	#linkedin,
+	#github,
+	#treehouse,
+	#codepen,
+	#behance  {
+		font-size: .9em;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 750px) {
+	body {
+		height: 700px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+	
+	.gradLink {
+		font-size: 20px;
+	}
+	
+	#rgbValueNowDiv,
+	#rgbValueDiv {
+		position: absolute;
+		margin: auto;
+	}
+	
+	#rgbValueNowDiv {
+		left: 50px;
+	}
+	
+	#rgbValueDiv {
+		right: 50px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#rgbValueNowDiv,
+	#rgbValueDiv {
+		top: 85px;
+	}
+}
+
+@media screen and (min-width: 1750px) {
+	#rgbValueNowDiv,
+	#rgbValueDiv {
+		top: 0px;
+	}
+}

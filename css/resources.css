@@ -49,10 +49,10 @@ header {
 	width: 75%;
 	max-width: 150px;
 	margin: 25px auto 30px;
-	padding: 8.5px 15px;
+	padding: 5px 5px 2px;
 	background: white;
 	border-radius: 5px;
-	box-shadow: 3px 3px 5px black inset, -3px -3px 5px black inset;
+	box-shadow: 1px 0px 4px black inset, -1px 0px 4px black inset;
 }
 
 /* BANNER DIV */
@@ -122,6 +122,10 @@ header {
 	background-color: ivory;
 	padding-top: 10px;
 	padding-bottom: 35px;
+}
+
+h2 {
+	font-weight: 100;
 }
 
 #title {
@@ -277,6 +281,7 @@ p {
 
 #learn {
 	text-align: center !important;
+	text-indent: 0px;
 	font-size: 1.1em;
 }
 
@@ -314,7 +319,7 @@ p {
 #nav4{
 	height: auto;
 	width: 90%;
-	max-width: 950px;
+	max-width: 650px;
 	margin: 25px auto 50px;
 	padding-bottom: 7.5px;
 	background: black;

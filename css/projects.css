@@ -1,0 +1,281 @@
+/* PROJECTS PAGE STYLING*/
+
+/* GENERAL STUFF */
+body {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+#mainLogo {
+	width: 150px;
+	margin: 15px auto;
+	padding: 8.5px 15px;
+	background: white;
+}
+
+/* HORIZONTAL RULE */
+.hrToDownRight {
+	transform: rotateZ(2.5deg);
+	margin: 50px 0;
+}
+
+.hrToDownLeft {
+	transform: rotateZ(-2.5deg);
+	margin: 50px 0;
+}
+
+/* PROJECTS  */
+.projectDiv {
+	position: relative;
+	margin: 25px 0 35px;
+	perspective: 500px;
+}
+
+.projectImg {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.shadow {
+	
+}
+
+.projectDescritpion {
+	line-height: 25px;
+	max-width: 600px;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#deciderImg {
+	width: 200px;
+	height: 125px;
+	margin: 5px auto 10px;
+	background-size: 50% 80%;
+}
+
+#deciderShadow {
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	width: 115px;
+	height: 85px;
+	margin: 0;
+	margin-left: -57.5px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.1), black);
+	border-radius: 12.5px 12.5px 0 0;
+	transform: rotateX(-70deg);
+	z-index: -1;
+}
+
+#title_1,
+#title_2,
+#title_3 {
+	font-weight: 100;
+}
+
+#title_1 span {
+	white-space: nowrap;
+	line-height: 35px;
+}
+
+.backgrounds {
+	width: 75px;
+	height: 100px;
+	margin: 5px auto 10px;
+	background-size: 100% 50%;
+}
+
+#comingSoonImg {
+	width: 100px;
+	height: 100px;
+	margin: 5px auto -5px;
+	background-size: 100% 100%;
+}
+
+.table {
+	margin: 0 auto;
+	background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
+}
+
+#top {
+	width: 150px;
+	height: 15px;
+	box-shadow: 0px -1px 1px rgba(0,0,0,0.7) inset;
+}
+
+#column {
+	width: 50px;
+	height: 100px;
+	background: linear-gradient(to right, rgba(0,0,0,0.3), ivory, rgba(0,0,0,0.3));
+	box-shadow: 0px 10px 2px rgba(0,0,0,0.5) inset;
+}
+
+#base {
+	width: 75px;
+	height: 10px;
+}
+
+#base2 {
+	width: 100px;
+	height: 15px;
+}
+
+#base3 {
+	width: 150px;
+	height: 20px;
+	margin-bottom: 25px;
+	box-shadow: 0px -1px 1px rgba(0,0,0,0.7) inset;
+}
+
+/* NAV */
+#borderDiv1 {
+	height: 5px;
+	margin-bottom: 2px;
+	background: black;
+}
+
+#borderDiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	width: 50px;
+	height: 40px;
+	margin: 5px auto;
+}
+
+#navoverdiv {
+	border-top: 5px solid black;
+	margin: 2px auto 0px;	
+}
+
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 650px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px rgba(0,0,0,0.6), -1px 10px 5px rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+
+#nav4 a {
+	font-size: 1.25em;
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+}
+
+#social-icons {
+	margin: auto;
+	padding-bottom: 25px;
+	border-bottom: 5px solid black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#codepen,
+#behance {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	font-size: .7em;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+#hrLast {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* SELECTED */
+#selected2 {
+	color: dodgerblue !important;
+	font-size: 1.5em  !important;
+}
+
+/* MEDIA QUERIES -- SMALL SCREENS */
+@media screen and (min-width: 500px) {
+	#mainLogo {
+		width: 250px;
+	}
+
+	#linkedin,
+	#github,
+	#treehouse,
+	#codepen,
+	#behance  {
+		font-size: .9em;
+		width: 100px;
+		height: 100px;
+	}
+	
+	#deciderImg {
+		width: 300px;
+		height: 215px;
+		background-size: 50% 85%;
+	}
+
+	#deciderShadow {
+		top: 102.5px;
+		width: 180px;
+		height: 175px;
+		margin-left: -90px;
+	}
+	
+	.backgrounds {
+		width: 150px;
+		height: 150px;
+		margin: 5px auto 10px;
+		background-size: 100% 70%;
+	}
+}
