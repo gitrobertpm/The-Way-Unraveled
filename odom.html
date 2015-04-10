@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>Galactic Odometer</title>
+		<meta name="description" content="A running count of the space miles traveled in one's lifetime.">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/odom.css">
+	</head>
+	<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+		<div id="wrapper">
+			<header>
+				<div id="logoDiv">
+					<div id="ring_L"></div>
+					<div id="planet">
+						<div id="odomImgDiv">
+							<div id="odomImg_1" class="odomImg"><h1>0</h1></div>
+							<div id="odomImg_2" class="odomImg"><h1>0</h1></div>
+							<div id="odomImg_3" class="odomImg"><h1>0 1</h1></div>
+						</div>
+					</div>
+					<div id="ring_R"></div>
+					<div id="ringShadow"></div>
+				</div>
+				<h1 style="font-weight: 100;" class="centeredText">Your Personal Galactic Odometer</h1>
+			</header>
+			<div id ="mainDiv">
+				<div id="windshield">
+					<div id="innerWindshield">
+						<div id="innerWindshield2">
+							<div id="rearviewArm"></div>
+							<div id="rearview"></div>
+							<p>Multiple sources claim that the average individual will walk about 110,000 miles and drive almost a million.</p>
+							<p>That's the equivalent of walking the circumference of the Earth's equator more than 4 times, and driving around it nearly 40.</p>
+							<p>But that's nothing compared to the space-miles one travels in a single hour.</p>
+							<div id="wiper_L"></div>
+							<div id="wiperArm_L"></div>
+							<div id="wiper_R"></div>
+							<div id="wiperArm_R"></div>
+						</div>
+					</div>
+				</div>
+				<div id="deviceDiv">
+					<div id="formDiv">
+						<div id="innerFormDiv">
+							<div id="innerFormDiv2">
+								<h2 style="font-weight: 100;" class="centeredText">Enter your DOB coordinates</h2>
+								<div class="inputDiv">
+									<label for="yearBorn">- Year -</label><br>
+									<input type="text" id="yearBorn" class="centeredText" placeholder="1989, 1999, 2009, etc...">
+								</div>
+								<div class="inputDiv">
+									 
+									<label for="monthBorn">- Month -</label><br>
+									<input type="text" id="monthBorn" class="centeredText" placeholder="1 for January, 2 for February, 3 for March, etc...">
+								</div>
+								<div class="inputDiv">
+									
+									<label for="dayBorn">- Day -</label><br>
+									<input type="text" id="dayBorn" class="centeredText" placeholder="1, 2, 3, 19, etc...">
+								</div>
+								<button onclick="getMiles();">Get Your Mileage</button>
+								<button onclick="reset()" id="reset">Reset</button>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="outerClockDiv">
+						<div id="outerClockDiv2">
+							<div id="clock"><p id="clockP"></p></div>
+						</div>
+					</div>
+					<br>
+					<div id="odometerDiv">
+						<p id="odometerP"><span id="odometer">000,000,000,000,000,000</span> <span id="olive"><b>SPACE-MILES</b></span></p>
+					</div>
+					<br>
+				</div>
+				<h1 style="font-weight: 100;" id="explanation" class="centeredText">EXPLANATION</h1>
+				<p>This number is an approximation, but it should give you an idea of the great distances each of us travel in our lifetime.</p>
+				<p>Here's how we come up with this number.</p>
+				<p>An individual standing still at the equator is moving with the spin of the Earth at <b>1,037</b> mph.</p>
+				<p>At 45 degrees latitude, that individual's speed would be <b>733</b> mph.</p>
+				<p>As our planet orbits the sun, everyone on Earth is moving through space at a rate of <b>66,667</b> mph.</p>
+				<p>As our entire solar system orbits the super-massive black hole, Sagittarius A*, at the galactic center, every Earthling rides along on one of the Milky Way's spiral arms at approximately <b>550,000</b> mph.</p>
+				<p>Our solar system is also bobbing up and down at quite a clip as it revolves around the galaxy.  Right now, relative to the galactic disk, we're moving up at approximately <b>15,700</b> mph.</p>
+				<p>And using some of our nearest celestial neighbors as reference points, it has been estimated that the entire Milky Way galaxy is hurtling through interstellar space at an astonishing <b>2,237,000</b> mph.</p>
+				<p>So, if you disregard miles walked or driven, and add up the rest, an individual on the equator is travelling through space at approximately <b>2,870,404</b> mph, or <b>797</b> miles per second.</p>
+				<p>And an individual at 45 degrees latitude is moving at approximately <b>2,870,100</b> mph, which, when rounded to the nearest whole number, still works out to <b>797</b> miles per second.</p>
+				<p>That's like circumnavigating the Earth's circumference almost twice every minute.</p>
+				<p>So, never let anyone tell you that you haven't been around, because baby, you're a flyin'.</p>
+				<p class="centeredText">&copy;Robert PM&copy;</p>
+				<p class="centeredText">&#9775;</p>
+				<input type="button" value="Previous Page" id="goback" onclick="history.back(-1)" />
+			</div>
+		</div>
+		<div id="wrapper2">
+			<div id="borderDiv1"></div>
+			<div id="borderDiv2">
+				<a href="index.html"><img src="img/yinyangapart3.jpg" alt="logo" id="littleLogo"></a>
+			</div>
+			<div id="navoverdiv">
+				<div id="nav4">	
+					<a href="home.html">Home</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+					<a href="resources.html">Resources</a>
+					<a href="projects.html">Projects</a>
+				</div>
+				<div id="social-icons">
+					<a href="https://www.linkedin.com/pub/robert-manolis/b1/40a/34a" target="_blank" id="linkedin">linkedin</a>
+					<a href="https://github.com/gitrobertpm" target="_blank" id="github"> github</a>
+					<a href="http://teamtreehouse.com/robertmanolis" target="_blank" id="treehouse">treehouse</a>
+					<a href="https://www.behance.net/robertpm" target="_blank" id="behance">behance</a>
+					<a href="http://codepen.io/robertpm/" target="_blank" id="codepen">codepen</a>
+				</div>
+			</div>
+			<footer>
+				&copy; Robert PM 2015 &copy;<br>
+				Web design, development, art, &amp; written content created by Robert PM<br>Original Art designed in <a href="http://adobe/illustrator.com" target="_blank">Adobe Illustrator</a><br>
+				Code written in <a href="http://notepad-plus-plus.org" target="_blank">Notepad ++</a><br>
+				Code trouble&dash;shooting owes a thanks to the greater WWW community, most notably,<br>
+				<a href="http://teamtreehouse.com" target="_blank">Treehouse</a> | <a href="http://css-tricks.com" target="_blank">CSS TRICKS</a> | <a href="https://developer.mozilla.org" target="_blank">Mozilla Developer Network&lpar;MDN&rpar;</a> | <a href="http://www.w3schools.com/" target="_blank">w3schools</a> | <a href="http://stackoverflow.com" target="_blank">Stack Overflow</a> | <a href="https://www.google.com/?gws_rd=ssl" target="_blank">Google</a><br>  
+				Audio files from <a href="http://naturesoundsfor.me" target="_blank">naturesoundsfor.me</a> via <a href="http://freesound.org" target="_blank">freesound.org</a><br>
+				Usage rights and attribution may be found <a href="about.html#attribution">here</a>.<br>
+				&#9775;Awesomeness provided by Robert PM&#9775;<br><br>
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" id="cc" /></a><a href="index.html">thewayunraveled.com</a> and all of its original art and written content created by Robert PM is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br/>Permissions beyond the scope of this license may be available <a href="about.html#attribution" rel="cc:morePermissions">here</a>.<br>
+				<hr id="hrLast">
+			</footer>
+		</div>
+		<script src="js/odom.js"></script>
+	</body>
+</html>

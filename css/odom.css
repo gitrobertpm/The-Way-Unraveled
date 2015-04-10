@@ -1,0 +1,499 @@
+/* GALACTIC ODOMETER */
+
+body {
+	font-family: Century Gothic, sans-serif;
+	font-size: 1em;
+	margin: 0;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+	transition-duration: .25s;
+	outline: 0;
+}
+
+a:hover, a:focus, a:active {
+	color: white;
+	text-shadow: 1px 1px 2px blue, -1px 1px 2px blue, -1px -1px 4px deepskyblue, 1px -1px 4px deepskyblue;
+	transition-duration: .5s;
+}
+
+/* CENTER TEXT */
+#wrapper2,
+#formDiv,
+#clock,
+#odometerDiv,
+.centeredText {
+	text-align: center;
+}
+
+/* HEADER AND LOGO */
+header {
+	color: white;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	background: black;
+	box-shadow: 0 -5px 25px rgba(255,255,255,0.5) inset;
+	border-bottom: 2px solid black;
+}
+
+#logoDiv {
+	position: relative;
+	width: 250px;
+	margin: auto;
+}
+
+#ring_L,
+#ring_R {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 75px;
+	height: 25px;
+	background: linear-gradient(to top, darkorange, orange, white, orange, white, orange, darkorange);
+	z-index: 99;
+}
+
+#ring_L {
+	margin-top: -45px;
+	margin-left: -75px;
+	border-radius: 50% 0 0 50%;
+	transform: skewY(45deg);
+}
+
+#ring_R {
+	margin-top: 30px;
+	margin-right: -75px;
+	border-radius: 0 50% 50% 0;
+	transform: skewY(45deg);
+}
+
+#ringShadow {
+	position: absolute;
+	top: 80px;
+	left: 60px;
+	width: 110px;
+	height: 15px;
+	background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+	transform: skewY(45deg);
+	z-index: 99;
+}
+
+#planet {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	background: radial-gradient(farthest-corner at 65% 35%, white, orange, darkorange);
+	border-radius: 50%;
+	z-index: 9;
+}
+
+.odomImg {
+	position: absolute;
+	top: 50%;
+	margin-top: -22.5px;
+	left: 50%;
+	width: 25px;
+	height: 45px;
+	background:  radial-gradient(farthest-corner at 65% 55%, rgba(0,0,0,0.5), rgba(0,0,0,0.8), black);
+	border: 3px solid white;
+	border-radius: 2.5px;
+	overflow: hidden;
+	line-height: 35px;
+	z-index: 999;
+}
+
+.odomImg h1 {
+	margin: 5px auto 0 4px;
+}
+
+#odomImg_1 {
+	margin-left: -55px;
+	box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+}
+
+#odomImg_2 {
+	margin-left: -12.5px;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+#odomImg_3 {
+	margin-left: 30px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+#odomImg_3 h1 {
+	margin-top: -15px;
+}
+
+/* WINDSHIELD */
+#windshield  {
+	position: relative;
+	perspective: 500px;
+	background: linear-gradient(to top, burlywood, antiquewhite, azure, lightblue, deepskyblue);
+}
+
+#innerWindshield {
+	background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+}
+
+#innerWindshield2 {
+	padding-bottom: 10px;
+	background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	overflow: hidden;
+}
+
+#rearviewArm {
+	width: 5px;
+	height: 15px;
+	margin: auto;
+	background: linear-gradient(to right, black, lightgrey, black);
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#rearview {
+	width: 100px;
+	height: 25px;
+	margin: auto;
+	background: linear-gradient(to top, grey, lightgrey, grey);
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+p {
+	line-height: 25px;
+	width: 90%;
+	max-width: 650px;
+	margin: 15px auto;
+}
+
+#wiper_L,
+#wiper_R {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: 150px;
+	height: 5px;
+	background: black;
+	border-top: 1px solid white;
+	border-radius: 50% 50% 0 0;
+	transform: skewY(-5deg);
+}
+
+#wiper_L {
+	margin-left: -150px;
+}
+
+#wiper_R {
+	margin-left: -10px;
+}
+
+#wiperArm_L,
+#wiperArm_R  {
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	width: 2.5px;
+	height: 75px;
+	background: black;
+	transform: rotateZ(79deg);
+}
+
+#wiperArm_L {
+	margin-left: -80px;
+}
+
+#wiperArm_R {
+	margin-left: 65px;
+}
+
+/* DEVICE */
+#deviceDiv {
+	background: black;
+	box-shadow: 0 5px 25px rgba(255,255,255,0.5) inset;
+	border: 1px solid black;
+}
+
+#formDiv {
+	width: 90%;
+	max-width: 1000px;
+	margin: 25px auto auto;
+	background: linear-gradient(darkkhaki, khaki, darkkhaki);
+	border-radius: 25px 25px 200px 200px;
+	box-shadow: 5px 15px 10px rgba(0,0,0,0.5) inset, -5px 0px 10px rgba(0,0,0,0.5) inset;
+}
+
+#innerFormDiv {
+	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+}
+
+#innerFormDiv2 {
+	padding-top: 5px;
+	background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+}
+
+#innerFormDiv2  h2 {
+	margin: 15px auto 0;
+	background: rgba(255,255,255,0.5);
+	border-top: 1px solid white;
+	border-bottom: 1px solid black;
+}
+
+.inputDiv {
+	display: inline-block;
+	width: 90%;
+	max-width: 300px;
+	margin: 5px auto;
+}
+
+label {
+	background: rgba(255,255,255,0.5);
+	padding-left: 15px;
+	padding-right: 15px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid black;
+}
+
+input {
+	display: inline-block;
+	width: 90%;
+	margin: 5px auto;
+	border: none;
+	border-top: 1px solid white;
+	border-bottom: 1px solid grey;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+}
+
+button {
+	display: block;
+	font-size: .95em;
+	width: 150px;
+	height: 25px;
+	margin: 10px auto;
+	padding: 2.5px;
+	color: white;
+	background: black;
+	border: none;
+	border-top: 1px solid white;
+	border-radius: 10px 10px 0 0;
+	cursor: pointer;
+}
+
+#reset {
+	padding-bottom: 0;
+}
+
+button:active, button:focus, button:hover {
+	color: olive;
+}
+
+#outerClockDiv {
+	width: 90%;
+	max-width: 400px;
+	margin: auto;
+	background: linear-gradient(darkkhaki, khaki, darkkhaki);
+}
+
+#outerClockDiv2 {
+	background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+}
+
+#clock {
+	background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.2), transparent, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+#clockP {
+	background: rgba(255,255,255,0.5);
+	border-top: 1px solid white;
+	border-bottom: 1px solid black;
+	border-radius: 2px;
+}
+
+#odometerDiv {
+	width: 90%;
+	max-width: 650px;
+	margin: auto;
+	background: black;
+	color: white;
+	border: 3px solid white;
+	border-radius: 2px;
+	box-shadow: 3px 3px 10px rgba(128,128,0,0.5) inset, -3px -3px 10px rgba(128,128,0,0.5) inset;
+	overflow: hidden;
+}
+
+#odometerP {
+	font-size: 1.5em;
+}
+
+#olive {
+	color: olive;
+}
+
+#explanation {
+	background: rgba(128,128,0,0.5);
+	border-bottom: 1px solid black;
+}
+
+#goback{
+	display: block;
+	max-width: 150px;
+	font-size: 1.25em;
+	margin: 25px auto 5px;
+	padding: 2.5px 5px 5px; 
+	background: black;
+	border-radius: 5px;
+	box-shadow: .5px .5px 1px black inset, -.5px -.5px 1px black inset, .5px .5px 1px black, -.5px .5px 1px black, .5px -.5px 1px black, -.5px -.5px 1px black, 2px 10px 5px rgba(0, 0, 0, 0.7), -2px 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+#goback {
+	color: dodgerblue;
+	margin-bottom: 25px;
+}
+
+/* NAV */
+#borderDiv1 {
+	height: 5px;
+	margin-bottom: 2px;
+	background: black;
+}
+
+#borderDiv2 {
+	content: "";
+	height: 50px;
+	background: black;
+}
+
+#littleLogo {
+	width: 50px;
+	height: 40px;
+	margin: 5px auto;
+}
+
+#navoverdiv {
+	border-top: 5px solid black;
+	margin: 2px auto 0px;	
+}
+
+#nav4{
+	height: auto;
+	width: 90%;
+	max-width: 650px;
+	margin: 25px auto 50px;
+	padding-bottom: 7.5px;
+	background: black;
+	box-shadow: 1px 5px 5px rgba(0,0,0,0.6), -1px 10px 5px rgba(0,0,0,0.6);
+	border-radius: 5px;
+}
+
+#nav4 a {
+	font-size: 1.25em;
+	color: white;
+	margin: 10px;
+	transition-duration: .5s;
+}
+
+#social-icons {
+	margin: auto;
+	padding-bottom: 25px;
+	border-bottom: 5px solid black;
+}
+
+#linkedin,
+#github,
+#treehouse,
+#codepen,
+#behance {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	font-size: .7em;
+	background-position: bottom right;
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+	color: white;
+	font-size: .75em;
+	line-height: 17.5px;
+	margin: 2px auto -10px;
+	padding-top: 10px;
+	padding-right: 2.5%;
+	padding-bottom: 5px;
+	padding-left: 2.5%;
+	background: black;
+}
+
+#cc {
+	display: block;
+	margin: auto auto 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+#hrLast {
+	color: white;
+	width: 95%;
+	height: 2.5px;
+	margin: 5px auto;
+	padding: 0;
+	border-bottom: 1px solid #888;
+	border-radius: 50%;
+}
+
+/* MEDIA QUERIES -- SMALL SCREENS */
+@media screen and (min-width: 500px) {
+	#linkedin,
+	#github,
+	#treehouse,
+	#codepen,
+	#behance  {
+		font-size: .9em;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+/* MEDIA QUERRIES FOR LARGE SCREENS */
+@media screen and (min-width: 1000px) {
+	#wiper_L,
+	#wiper_R {
+		width: 250px;
+	}
+
+	#wiper_L {
+		margin-left: -250px;
+	}
+
+	#wiperArm_L {
+		margin-left: -125px;
+	}
+
+	#wiperArm_R {
+		margin-left: 115px;
+	}
+
+	#yearBorn {
+		box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+		border-radius: 0 0 0 20px;
+}
+
+	#monthBorn {
+		box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+	}
+
+	#dayBorn{
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+		border-radius: 0 0 20px 0;
+	}
+	
+	#odometerP {
+		font-size: 2em;
+		
+	}
+}
