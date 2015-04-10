@@ -491,11 +491,11 @@ a:hover, a:focus, a:active {
 	#outerQuoteDiv,
 	#outerReminderDiv {
 		position: absolute;
-		bottom: -50px;
-		width: 33%;
+		bottom: 0px;
+		width: 32%;
 		height: 300px;
 		border-top: none;
-		border-bottom: none;
+		border-bottom: 1px solid black;
 	}
 	
 	#outerQuoteDiv {
@@ -509,19 +509,20 @@ a:hover, a:focus, a:active {
 	#reminderSide,
 	#quoteSide {
 		position: absolute;
-		bottom: 5px;
+		bottom: 58px;
 		width: 15px;
-		height: 300px;
-		background: linear-gradient(to top, white, rgba(255,255,255,0.5)); 
+		height: 297px;
+		background: linear-gradient(to top, white, rgba(255,255,255,0.5));
+		border-bottom: 1px solid black;
 	}
 	
 	#quoteSide {
-		left: 33%;
+		left: 32%;
 		transform: rotateY(50deg);
 	}
 	
 	#reminderSide {
-		right: 33%;
+		right: 32%;
 		transform: rotateY(-50deg);
 	}
 	
@@ -538,8 +539,8 @@ a:hover, a:focus, a:active {
 	#quoteBottom,
 	#reminderBottom {
 		position: absolute;
-		bottom: 300px;
-		width: 33%;
+		bottom: 350px;
+		width: 32%;
 		height: 10px;
 		background: linear-gradient(to bottom, white, rgba(255,255,255,0.5));
 	}
@@ -578,5 +579,15 @@ a:hover, a:focus, a:active {
 
 	#background_2 {
 		background: linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3), rgba(0,0,0,0.3), white, rgba(0,0,0,0.3), rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+	}
+	
+	#reminderSide,
+	#quoteSide {
+		position: absolute;
+		bottom: 57px;
+		width: 15px;
+		height: 297px;
+		background: linear-gradient(to top, white, rgba(255,255,255,0.5));
+		border-bottom: 1px solid black;
 	}
 }

@@ -29,7 +29,10 @@ a:hover, a:focus, a:active {
 }
 
 #title_0 {
+	max-width: 350px;
+	margin: auto;
 	margin-top: 0px;
+	border-bottom: 5px solid black;
 }
 
 /* HORIZONTAL RULE */
@@ -77,12 +80,12 @@ a:hover, a:focus, a:active {
 
 #deciderShadow {
 	position: absolute;
-	top: 70px;
+	top: 82.5px;
 	left: 50%;
-	width: 115px;
-	height: 85px;
+	width: 110px;
+	height: 65px;
 	margin: 0;
-	margin-left: -57.5px;
+	margin-left: -55px;
 	background: linear-gradient(to bottom, rgba(0,0,0,0.1), black);
 	border-radius: 12.5px 12.5px 0 0;
 	transform: rotateX(-70deg);
@@ -272,10 +275,10 @@ footer {
 	}
 
 	#deciderShadow {
-		top: 102.5px;
-		width: 180px;
-		height: 175px;
-		margin-left: -90px;
+		top: 120px;
+		width: 175px;
+		height: 150px;
+		margin-left: -87.5px;
 	}
 	
 	.backgrounds {
