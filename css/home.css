@@ -166,17 +166,17 @@ header {
 	margin-bottom: 100px;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	background: rgba(0, 0, 255, 0.3);
+	background: linear-gradient(to right, rgba(0, 0, 50, 0.5), rgba(0, 0, 255, 0.3), rgba(0, 0, 50, 0.5));
 	box-shadow: 0px 1px 2px blue inset, 0px -1px 2px blue inset; 
 }
 
 .contentdivtwo {
-	background: rgba(175, 0, 0, 0.3);
+	background: linear-gradient(to right, rgba(100, 0, 0, 0.5), rgba(175, 0, 0, 0.3), rgba(100, 0, 0, 0.5));
 	box-shadow: 0px 1px 2px red inset, 0px -1px 2px red inset; 
 }
 
 .contentdivthree {
-	background: rgba(0, 175, 0, 0.3);
+	background: linear-gradient(to right, rgba(0, 50, 0, 0.5), rgba(0, 175, 0, 0.3), rgba(0, 50, 0, 0.5));
 	box-shadow: 0px 1px 2px green inset, 0px -1px 2px green inset; 
 }
 
